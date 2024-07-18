@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form>
+      <input type="file" name="avatar" accept="image/*" />
+    </form>
+
+    <img src="" alt="" id="myImg" width="300px" />
+
+    <script>
+      const field = document.forms[0].avatar;
+
+      field.addEventListener("change", (e) => {
+        console.log(field.files[0]);
+        const url = URL.createObjectURL(field.files[0]);
+        myImg.src = url;
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="info">123</div>
+
+    <script>
+      const el1 = document.querySelector("#info");
+      const el2 = el1; // 設定參照
+
+      el2.innerHTML = "一袋米";
+
+      let a = 10;
+      let b = a; // 設定值, Number, Boolean, String
+      b = 5;
+      console.log({ a, b });
+    </script>
+  </body>
+</html>
