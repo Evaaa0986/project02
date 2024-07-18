@@ -21,7 +21,7 @@ $email = trim($_POST['email']);
 $password = trim($_POST['password']);
 
 # 先判斷帳號對不對
-$sql = "SELECT * FROM members WHERE email=?";
+$sql = "SELECT * FROM 'members-li' WHERE email=?";
 $stmt = $pdo->prepare($sql);
 $stmt->execute([$email]);
 $row = $stmt->fetch();
