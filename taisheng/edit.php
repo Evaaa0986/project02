@@ -17,7 +17,7 @@ if (empty($r)) {
 # header('Content-Type: application/json'); # 告訴瀏覽器內容為 JSON
 # echo json_encode($r);
 ?>
-<?php include __DIR__ . "/parts/html-head.php"; ?>
+<?php include __DIR__ . "../../parts/html-head.php"; ?>
 <style>
   form .mb-3 .form-text {
     color: red;
@@ -102,7 +102,7 @@ if (empty($r)) {
   </div>
 </div>
 
-<?php include __DIR__ . "/parts/scripts.php"; ?>
+<?php include __DIR__ . "../../parts/scripts.php"; ?>
 <script>
 
   const modal = new bootstrap.Modal('#exampleModal');
@@ -144,4 +144,4 @@ if (empty($r)) {
     }
   };
 </script>
-<?php include __DIR__ . "/parts/html-foot.php"; ?>
+<?php include __DIR__ . "../../parts/html-foot.php"; ?>

@@ -7,7 +7,7 @@ $pageName = "game_add";
 require __DIR__ . '/db-connect.php';
 
 ?>
-<?php include __DIR__ . "/parts/html-head.php"; ?>
+<?php include __DIR__ . "../../parts/html-head.php"; ?>
 <style>
   form .mb-3 .form-text {
     color: red;
@@ -91,7 +91,7 @@ require __DIR__ . '/db-connect.php';
   </div>
 </div>
 
-<?php include __DIR__ . "/parts/scripts.php"; ?>
+<?php include __DIR__ . "../../parts/scripts.php"; ?>
 <script>
   //  const modal = new bootstrap.Modal('#exampleModal');
   //  const modalBody = document.querySelector('#exampleModal .modal-body');
@@ -132,4 +132,4 @@ require __DIR__ . '/db-connect.php';
 
     
 </script>
-<?php include __DIR__ . "/parts/html-foot.php"; ?>
+<?php include __DIR__ . "../../parts/html-foot.php"; ?>

@@ -4,8 +4,8 @@ $pageName = "forger-pwd";
 
 <?php require("./api/db_connection.php"); ?>
 
-<?php include __DIR__ . "./pages/header.php"; ?>
-<?php include __DIR__ . "./pages/navbar.php"; ?>
+<?php include __DIR__ . "../../parts/html-head.php"; ?>
+<?php include __DIR__ . "../../parts/navbar.php"; ?>
 
 
 <div class="card position-absolute top-50 start-50 translate-middle" style="width: 40rem;">
@@ -27,5 +27,5 @@ $pageName = "forger-pwd";
 </div>
 
 
-<?php include __DIR__ . "./pages/scripts.php"; ?>
-<?php include __DIR__ . "./pages/footer.php";
+<?php include __DIR__ . "../../parts/scripts.php"; ?>
+<?php include __DIR__ . "../../parts/html-foot.php";

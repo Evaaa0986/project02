@@ -87,8 +87,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if ($member) {
         // 會員資料存在，顯示編輯表單
 ?>
-        <?php include './pages/header.php'; ?>
-        <?php include './pages/navbar.php'; ?>
+        <?php include '../parts/html-head.php'; ?>
+        <?php include '../parts/navbar.php'; ?>
 
         <div class="container mt-5">
             <h2 class="mb-4">編輯會員資料</h2>
@@ -166,8 +166,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             });
         </script>
         <script src="./scripts/members-edit.js"></script>
-        <?php include './pages/scripts.php'; ?>
-        <?php include './pages/footer.php'; ?>
+        <?php include '../parts/scripts.php'; ?>
+        <?php include '../parts/html-foot.php'; ?>
 <?php
     } else {
         // 找不到會員

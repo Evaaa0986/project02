@@ -9,8 +9,8 @@ if (!isset($_SESSION['user'])) {
 
 $pageName = "members"; // 頁面名稱
 
-include __DIR__ . "/pages/header.php";
-include __DIR__ . "/pages/navbar.php";
+include __DIR__ . "../../parts/html-head.php";
+include __DIR__ . "../../parts/navbar.php";
 ?>
 
 <div class="container mt-5">
@@ -67,5 +67,5 @@ include __DIR__ . "/pages/navbar.php";
 <?php include './components/member_modal.php'; ?>
 <script src="./js/member_form.js"></script>
 
-<?php include __DIR__ . "/pages/scripts.php"; ?>
-<?php include __DIR__ . "/pages/footer.php"; ?>
+<?php include __DIR__ . "../../parts/scripts.php"; ?>
+<?php include __DIR__ . "../../parts/html-foot.php"; ?>

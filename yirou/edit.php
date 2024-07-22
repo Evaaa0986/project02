@@ -18,7 +18,7 @@ if (empty($r)) {
 }
 
 ?>
-<?php include __DIR__ . "/parts/html-head.php"; ?>
+<?php include __DIR__ . "../../parts/html-head.php"; ?>
 <style>
   form .mb-3 .form-text {
     color: red;
@@ -99,7 +99,7 @@ if (empty($r)) {
   </div>
 </div>
 
-<?php include __DIR__ . "/parts/scripts.php"; ?>
+<?php include __DIR__ . "../../parts/scripts.php"; ?>
 <script>
   const quesField = document.form1.ques_con;
   const opt1Field = document.form1.opt1;
@@ -164,4 +164,4 @@ if (empty($r)) {
     }
   };
 </script>
-<?php include __DIR__ . "/parts/html-foot.php"; ?>
+<?php include __DIR__ . "../../parts/html-foot.php"; ?>

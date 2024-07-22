@@ -15,7 +15,7 @@ if (empty($r)) {
 // header("Content-type: application/json");
 // echo json_encode($r);
 ?>
-<?php include __DIR__ . "/parts/html-head.php"; ?>
+<?php include __DIR__ . "../../parts/html-head.php"; ?>
 <?php include __DIR__ . "/parts/navbar.php"; ?>
 
 <div class="container">
@@ -88,7 +88,7 @@ if (empty($r)) {
 </div>
 
 
-<?php include __DIR__ . "/parts/scripts.php"; ?>
+<?php include __DIR__ . "../../parts/scripts.php"; ?>
 <script>
     const modal = new bootstrap.Modal('#exampleModal');
     const modalBody = document.querySelector('#exampleModal .modal-body');
@@ -129,4 +129,4 @@ if (empty($r)) {
         }
     };
 </script>
-<?php include __DIR__ . "/parts/html-foot.php"; ?>
+<?php include __DIR__ . "../../parts/html-foot.php"; ?>

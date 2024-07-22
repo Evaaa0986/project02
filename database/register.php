@@ -1,8 +1,8 @@
 <?php
 $pageName = "register"; // 頁面名稱
 require("./api/db_connection.php"); // 包含資料庫連接文件
-include __DIR__ . "/pages/header.php"; // 包含頁首文件
-include __DIR__ . "/pages/navbar.php"; // 包含導航欄文件
+include __DIR__ . "../../parts/html-head.php"; // 包含頁首文件
+include __DIR__ . "../../parts/navbar.php"; // 包含導航欄文件
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // 從表單接收數據
@@ -133,7 +133,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     });
 </script>
 <script src="./scripts/members-add.js"></script>
-<?php include __DIR__ . "/pages/scripts.php"; // 包含腳本文件 
+<?php include __DIR__ . "../../parts/scripts.php"; // 包含腳本文件 
 ?>
-<?php include __DIR__ . "/pages/footer.php"; // 包含頁尾文件 
+<?php include __DIR__ . "../../parts/html-foot.php"; // 包含頁尾文件 
 ?>

@@ -1,14 +1,12 @@
 <?php
-$pageName = "login"; // 設定頁面名稱
+session_start(); // Start session first
+
+$pageName = "login"; // Setting page name
+require("./api/db_connection.php"); // Include database connection
+include __DIR__ . "../../parts/html-head.php"; // Include header
+include __DIR__ . "../../parts/navbar.php"; // Include navbar
 ?>
 
-<?php require("./api/db_connection.php"); // 引入資料庫連接 
-?>
-
-<?php include __DIR__ . "./pages/header.php"; // 包含頁首 
-?>
-<?php include __DIR__ . "./pages/navbar.php"; // 包含導航欄 
-?>
 
 <?php
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
@@ -74,7 +72,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     });
 </script>
 
-<?php include __DIR__ . "./pages/scripts.php"; // 包含腳本 
+<?php include __DIR__ . "../../parts/scripts.php"; // 包含腳本 
 ?>
-<?php include __DIR__ . "./pages/footer.php"; // 包含頁尾 
+<?php include __DIR__ . "../../parts/html-foot.php"; // 包含頁尾 
 ?>
