@@ -21,7 +21,7 @@ $email = trim($_POST['email']);
 $password = trim($_POST['pwd']);
 
 # 先判斷帳號對不對
-$sql = "SELECT * FROM members WHERE email=?";
+$sql = "SELECT * FROM `members-wang` WHERE email=?";
 $stmt = $pdo->prepare($sql);
 $stmt->execute([$email]);
 $row = $stmt->fetch();

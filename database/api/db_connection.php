@@ -2,9 +2,9 @@
 
 $db_host = 'localhost'; // 使用數據庫服務器 IP
 $db_user = 'root';      // 數據庫用戶名
-$db_pass = 'xcusey224'; // 數據庫密碼
-$db_name = 'members';
-
+$db_pass = 'a0988676918'; // 數據庫密碼
+$db_name = 'project02';
+$db_port = 3306;
 // 數據源名稱（DSN）
 $dsn = "mysql:host={$db_host};dbname={$db_name};charset=utf8mb4";
 

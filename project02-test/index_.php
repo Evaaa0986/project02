@@ -1,4 +1,5 @@
 <?php
+
 $title = "文章列表";
 require __DIR__ . "/connect.php";
 $perPage = 20;#每頁筆數
@@ -7,24 +8,33 @@ if ($page < 1) {
     header("Location: ?page=1");
     exit;
 }
-$t_sql = "SELECT COUNT(1) totalRows FROM article";
-$totalRows = $pdo->query($t_sql)->fetch(PDO::FETCH_NUM)[0];#總筆數
+
+$search = isset($_GET['search']) ? $_GET['search'] : '';
+// var_dump($search);
+$sql = sprintf(
+    "SELECT * FROM article WHERE title LIKE '%%%s%%' ORDER BY article_id DESC LIMIT %d, %d",
+    $search,
+    ($page - 1) * $perPage,
+    $perPage
+);
+
+$rows = $pdo->query($sql)->fetchAll();
+
+$t_sql = "SELECT COUNT(*) totalRows FROM article WHERE title LIKE ?";
+$totalRows = $pdo->prepare($t_sql);
+$totalRows->execute(["%$search%"]);
+$totalRows = $totalRows->fetch(PDO::FETCH_NUM)[0];
 $totalPage = 0;
-$rows = [];
 if ($totalRows) {
-    $totalPage = ceil($totalRows / $perPage);#總頁數
+    $totalPage = ceil($totalRows / $perPage);
     if ($page > $totalPage) {
         header("Location: ?page=" . $totalPage);
         exit;
     }
-
-    $sql = sprintf(
-        "SELECT * FROM article  ORDER BY article_id DESC LIMIT %s, %s",
-        ($page - 1) * $perPage,
-        $perPage
-    );
-    $rows = $pdo->query($sql)->fetchAll();
 }
+
+
+
 
 ?>
 

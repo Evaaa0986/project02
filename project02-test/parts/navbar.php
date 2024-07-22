@@ -17,7 +17,7 @@
                         <a class="nav-link" href="add.php">新增</a>
                     </li>
                 </ul>
-                <form method="get" action="index2_.php">
+                <form method="get" action="index_.php">
                     <input type="text" name="search" placeholder="輸入關鍵字">
                     <button>搜索</button>
                 </form>
