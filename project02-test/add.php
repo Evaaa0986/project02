@@ -9,7 +9,7 @@ require __DIR__ . "/connect.php";
 
 <div class="container">
   <div class="row">
-    <div class="col-6">
+    <div class="col-6 mx-auto">
       <div class="card">
         <div class="card-body">
           <h4 class="card-title mb-3">新增文章</h4>

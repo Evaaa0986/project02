@@ -47,9 +47,14 @@ if ($totalRows) {
         white-space: nowrap;
     }
 </style>
+
 <div class="container">
     <div class="col">
-        <table class="table box2" style="table-layout:fixed">
+        <form method="get" action="index_.php" class="ms-auto my-4 col-3">
+            <input type="text" name="search" placeholder="輸入關鍵字">
+            <button>搜索標題</button>
+        </form>
+        <table class="table" style="table-layout:fixed">
             <thead>
                 <tr>
                     <th width="110" style="text-align:center">文章序號</th>

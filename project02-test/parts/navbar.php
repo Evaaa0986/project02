@@ -33,10 +33,7 @@
                                 <a class="nav-link" href="add.php">新增</a>
                             </li>
                         </ul>
-                        <form method="get" action="index_.php">
-                            <input type="text" name="search" placeholder="輸入關鍵字">
-                            <button>搜索標題</button>
-                        </form>
+
                     </div>
                 </div>
             </nav>
