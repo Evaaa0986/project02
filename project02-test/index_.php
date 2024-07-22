@@ -49,39 +49,37 @@ if ($totalRows) {
 </style>
 <div class="container">
     <div class="col">
-        <table class="table" style="table-layout:fixed">
+        <table class="table box2" style="table-layout:fixed">
             <thead>
                 <tr>
-                    <th><i class="fa-solid fa-trash"></i></th>
-                    <th>文章序號</th>
-                    <th>會員id</th>
-                    <th>文章分類</th>
-                    <th>遊戲id</th>
-                    <th>最後修改時間</th>
-                    <th>文章標題</th>
-                    <th>文章內容</th>
-                    <th><i class="fa-regular fa-pen-to-square"></i></th>
+                    <th width="110" style="text-align:center">文章序號</th>
+                    <th width="110">會員id</th>
+                    <th width="110">文章分類</th>
+                    <th width="110">遊戲id</th>
+                    <th width="200">最後修改時間</th>
+                    <th width="250">文章標題</th>
+                    <th width="250">文章內容</th>
+                    <th width="100" style="text-align:center">刪除與修改</th>
                 </tr>
             </thead>
             <tbody>
                 <?php foreach ($rows as $r): ?>
                     <tr>
-                        <td>
-                            <a href="javascript: deleteOne(<?= $r['article_id'] ?>)">
-                                <i class="fa-solid fa-trash"></i>
-                            </a>
-                        </td>
-                        <td><?= $r['article_id'] ?></td>
+                        <td style="text-align:center"><?= $r['article_id'] ?></td>
                         <td><?= $r['user_id'] ?></td>
                         <td><?= $r['article_class'] ?></td>
                         <td><?= $r['game_id'] ?></td>
                         <td><?= $r['times'] ?></td>
                         <td><?= $r['title'] ?></td>
                         <td><?= $r['content'] ?></td>
-                        <td><a href="#">
-                        <td><a href="edit.php?article_id=<?= $r['article_id'] ?>">
+                        <td style="text-align:center">
+                            <a href="javascript: deleteOne(<?= $r['article_id'] ?>)">
+                                <i class="fa-solid fa-trash">&emsp;</i>
+                            </a>
+                            <a href="edit.php?article_id=<?= $r['article_id'] ?>">
                                 <i class="fa-regular fa-pen-to-square"></i>
-                            </a></td>
+                            </a>
+                        </td>
                     </tr>
                 <?php endforeach ?>
             </tbody>
@@ -90,8 +88,8 @@ if ($totalRows) {
 </div>
 
 <div class="container ">
-    <div class="row">
-        <div class="col ">
+    <div class="row ">
+        <div class="col">
             <nav aria-label="Page navigation example">
                 <ul class="pagination">
                     <?php for ($i = $page - 5; $i <= $page + 5; $i++):
