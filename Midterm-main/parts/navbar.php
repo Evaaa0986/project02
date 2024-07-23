@@ -27,10 +27,10 @@ if (!isset($pageName)) {
   </div>
   <div class="content"></div>
 
-<div class="container">
+<div class="mx-auto" style="width:85%;">
   <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <!-- 導航欄品牌圖標，點擊後返回登入頁面 -->
-            <button class="btn btn-dark top-left-btn" id="siderjump">管理列表</button>
+            <button class="btn btn-dark top-left-btn" id="siderjump" style="width:100px;">管理列表</button>
     <div class="container-fluid">
       <a class="navbar-brand" href="index_.php">桌遊縫合怪</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
