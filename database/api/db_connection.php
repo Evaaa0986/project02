@@ -1,8 +1,8 @@
 <?php
 
-$db_host = 'localhost'; // 使用數據庫服務器 IP
+$db_host = '172.18.103.109'; // 使用數據庫服務器 IP
 $db_user = 'root';      // 數據庫用戶名
-$db_pass = 'root'; // 數據庫密碼
+$db_pass = 'a0988676918'; // 數據庫密碼
 $db_name = 'project02';
 $db_port = 3306;
 // 數據源名稱（DSN）
